@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap');
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+img{
+  width: 100%;
+  align-self: flex-start;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  font-size: 1.3rem;
+}
+
+header {
+  background-color: #136c72;
+  padding: .5em 0;
+}
+
+/* display flex for the nav-bar*/
+
+.nav-bar {
+  /*margin: 0 auto;
+  width: 80%;
+  border: 2px solid yellow;
+  max-width: 1100px;*/
+  flex-grow: 1;
+  display: flex;
+  justify-content: space-between;
+  
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+}
+
+.logo {
+  margin-right: 1em;
+}
+
+
+.nav-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+}
+
+.nav-list--primary {
+  margin: 0 auto;
+}
+
+.btn {
+  padding: .7em;
+  border-radius: 65px;
+  border: 0px;
+}
+
+.btn:hover {
+  background-color: #136c72;
+  color: #fff;
+}
+
+.nav-link {
+  font-size: .7em;
+  
+}
+
+/*selects any nav-item that has an item before it giving them the assigned margin*/
+
+.nav-item + .nav-item {
+  margin-left: 1em ;
+}
+
+.nav-link:hover {
+  color: #fff;
+}
+
+.r-layouts {
+  background: linear-gradient(90deg, #136c72, #23424a);
+  display: flex;
+  justify-content: space-between;
+}
+
+.col1 {
+  width: 65%;
+}
+
+.col2{
+  width: 35%;
+}
+
+.cross {
+  width: 100%;
+  margin: 0 auto;
+  padding: 3em 2em;
+  max-width: 1100px;
+}
+
+h1 {
+  color: rgb(255, 255, 255);
+  font-size: 3rem;
+  margin-top: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+  text-transform: uppercase;
+  font-size: 1em;
+  font-weight: bold;
+}
+
+
+
+.learn {
+  background: linear-gradient(90deg, #136c72, #23424a);
+  border: 0px solid black;
+  padding: 2em 3em;
+  border-radius: 100px;
+}
+
+.learn:hover{
+  background: #fff;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+.col-2 {
+  background-color: #136c72;
+  text-align: center;
+  padding: 3em 2em;
+  color: #fff;
+  width: 35%;
+}
+
+.col-1 h2,.col-1 p {
+  color: #136c72;
+}
+
+@media (max-width: 600px) {
+  .r-layouts,
+  .cross {
+    display: block;
+  }
+
+  .col2 {
+    margin-top: 2em;
+    width: 100%;
+  }
+
+  .par,
+  .col1 {
+    width: 100%;
+  }
+
+
+
+}
